@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Calculator</title>
+</head>
+<link rel="stylesheet" href="love1.css">
+<img src="love.jpg">
+<body>
+   
+  <h1>Love Calculator</h1>
+  <div class="container">
+    <form class="form" onsubmit="return calculateLove()">
+      <label for="name1">Your Name:</label>
+      <input type="text" id="name1" required>
+      <br>
+      <label for="name2">Partner's Name:</label>
+      <input type="text" id="name2" required>
+      <br>
+      <input type="submit" value="Calculate Love">
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+  
+  <script>
+    function calculateLove() {
+      var name1 = document.getElementById('name1').value;
+      var name2 = document.getElementById('name2').value;
+      
+      // Basic algorithm for calculating love percentage
+      var lovePercentage = Math.floor(Math.random() * 100) + 1;
+      
+      var result = document.getElementById('result');
+      result.innerHTML = name1 + ' and ' + name2 + ' are a ' + lovePercentage + '% match!';
+      
+      return false; // Prevent form submission
+    }
+  </script>
+</body>
+</html>

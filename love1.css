@@ -1,0 +1,38 @@
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      image-resolution: calc(center);
+      
+
+}
+h1 {
+    color: #ff1493;
+  }
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 150px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff1493;
+  }
+
